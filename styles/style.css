@@ -1511,6 +1511,7 @@ section + section {
         flex-direction: column;
         text-align: left;
         gap: 5rem;
+        padding: 6rem 5% !important;
     }
  
     .expériences h2 {

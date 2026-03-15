@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <!-- ── SEO de base ── -->
+    <title>Gwenaël Ayllón — Designer UI/UX & Développeur Web · Montauban</title>
+    <meta name="description" content="Portfolio de Gwenaël Ayllón, designer graphique, UI/UX et développeur web basé à Montauban. Identité visuelle, Figma, WordPress, HTML/CSS/JS.">
+    <meta name="author" content="Gwenaël Ayllón">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://gwenael-ayllon.fr/">
+ 
+    <!-- ── Open Graph ── -->
+    <meta property="og:type"        content="website">
+    <meta property="og:url"         content="https://gwenael-ayllon.fr/">
+    <meta property="og:title"       content="Gwenaël Ayllón — Designer UI/UX & Développeur Web">
+    <meta property="og:description" content="Portfolio de Gwenaël Ayllón, designer graphique, UI/UX et développeur web basé à Montauban.">
+    <meta property="og:image"       content="https://gwenael-ayllon.fr/assets/image/logo2026ok.svg">
+    <meta property="og:locale"      content="fr_FR">
+ 
+    <!-- ── Twitter Card ── -->
+    <meta name="twitter:card"        content="summary_large_image">
+    <meta name="twitter:title"       content="Gwenaël Ayllón — Designer UI/UX & Développeur Web">
+    <meta name="twitter:description" content="Portfolio de Gwenaël Ayllón, designer graphique, UI/UX et développeur web basé à Montauban.">
+    <meta name="twitter:image"       content="https://gwenael-ayllon.fr/assets/image/logo2026ok.svg">
+ 
+    <!-- ── Schema.org ── -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Gwenaël Ayllón",
+        "jobTitle": "Designer UI/UX & Développeur Web",
+        "url": "https://gwenael-ayllon.fr/",
+        "sameAs": ["https://www.linkedin.com/in/gwenael-ayllon/"],
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Montauban",
+            "addressRegion": "Occitanie",
+            "addressCountry": "FR"
+        }
+    }
+    </script>
+
+    <link rel="icon" type="image/svg+xml" href="./assets/image/logo2026ok.svg">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/styleflamme.css" />
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&display=swap" rel="stylesheet">
+</head>
+<body>
+ 
+    <div id="app">
+ 
+        <div id="bg-container">
+        </div>
+ 
+        <div class="cursor"></div>
+ 
+        <div class="viewers-wrapper">
+            <div class="viewer-3d">
+                <canvas class="canvas-3d" data-model="assets/3D/pillars_column_ionic_v4_tall.stl"></canvas>
+            </div>
+            <div class="viewer-3d">
+                <canvas class="canvas-3d" data-model="assets/3D/pillars_column_ionic_v4_tall.stl"></canvas>
+            </div>
+        </div>
+ 
+        <div id="content-container">
+ 
+            <div class="navbar-overlay"></div>
+ 
+            <header class="header">
+                <a href="#home" class="logo">
+                    <img src="assets/image/logo2026ok.svg" alt="Logo">
+                </a>
+ 
+                <!-- Burger : icône seule, LinkedIn retiré du header mobile -->
+                <i class="bx bx-menu" id="menu-icon"></i>
+ 
+                <nav class="navbar">
+                    <a href="#expériences">Expériences</a>
+                    <a href="#services">Services</a>
+                    <a href="#projets">Projets</a>
+                    <!-- LinkedIn uniquement dans le drawer mobile -->
+                    <a href="https://www.linkedin.com/in/gwenael-ayllon/" target="_blank" class="nav-linkedin" aria-label="LinkedIn">
+                        <i class='bx bxl-linkedin-square'></i>
+                    </a>
+                </nav>
+ 
+                <a href="index.html#contact" class="gradient-btn">contact</a>
+ 
+                <!-- LinkedIn desktop (hors nav, visible seulement en desktop) -->
+                <div class="social-icons2">
+                    <a href="https://www.linkedin.com/in/gwenael-ayllon/" target="_blank" aria-label="LinkedIn">
+                        <i class="bx bxl-linkedin-square"></i>
+                    </a>
+                </div>
+            </header>
+ 
+            <section class="home" id="home">
+ 
+                <span class="hero-index">001</span>
+                <div class="hero-rule"></div>
+ 
+                <div class="hero-content">
+ 
+                    <div class="hero-top">
+                        <span class="hero-label drop-reveal">— portfolio 2026</span>
+                        <span class="hero-label drop-reveal">creative designer</span>
+                    </div>
+ 
+                    <h1 class="hero-name">
+                        <span class="hero-name__line hero-name__line--1">
+                            <span class="hero-name__word" data-text="GWENAËL">AYLLÓN</span>
+                        </span>
+                        <span class="hero-name__line hero-name__line--2">
+                            <span class="hero-name__word hero-name__word--outline" data-text="AYLLÓN">GWENAËL</span>
+                        </span>
+                    </h1>
+ 
+                    <div class="hero-bottom">
+                        <p class="hero-desc drop-reveal">
+                            Design graphique · UI/UX · Développement web
+                        </p>
+                        <div class="hero-actions drop-reveal">
+                            <a href="#projets" class="hero-btn hero-btn--primary">voir les projets</a>
+                            <a href="#contact" class="hero-btn hero-btn--ghost">contact</a>
+                        </div>
+                    </div>
+ 
+                </div>
+ 
+                <div class="hero-ticker" aria-hidden="true">
+                    <div class="hero-ticker__track">
+                        <span>UI DESIGN</span><span class="hero-ticker__dot">✦</span>
+                        <span>UX DESIGN</span><span class="hero-ticker__dot">✦</span>
+                        <span>LOGOTYPE</span><span class="hero-ticker__dot">✦</span>
+                        <span>WORDPRESS</span><span class="hero-ticker__dot">✦</span>
+                        <span>HTML / CSS / JS</span><span class="hero-ticker__dot">✦</span>
+                        <span>FIGMA</span><span class="hero-ticker__dot">✦</span>
+                        <span>IDENTITÉ VISUELLE</span><span class="hero-ticker__dot">✦</span>
+                        <span>UI DESIGN</span><span class="hero-ticker__dot">✦</span>
+                        <span>UX DESIGN</span><span class="hero-ticker__dot">✦</span>
+                        <span>LOGOTYPE</span><span class="hero-ticker__dot">✦</span>
+                        <span>WORDPRESS</span><span class="hero-ticker__dot">✦</span>
+                        <span>HTML / CSS / JS</span><span class="hero-ticker__dot">✦</span>
+                        <span>FIGMA</span><span class="hero-ticker__dot">✦</span>
+                        <span>IDENTITÉ VISUELLE</span><span class="hero-ticker__dot">✦</span>
+                    </div>
+                </div>
+ 
+            </section>
+ 
+           
+            <section class="expériences" id="expériences">
+ 
+                <div class="expériences-content">
+                    <h2><span class="highlight-reveal">/EXPERIENCES</span></h2>
+                    <p class="drop-reveal">Mon parcours débute par une licence Couleur Image Design spécialisée en graphisme, où j'ai développé mes compétences créatives et ma maîtrise de la suite Adobe.<br> Passionné par le digital, je me suis ensuite orienté vers le web en suivant une formation professionnelle en UI Design. C'est à travers cette formation que j'ai découvert et appris à utiliser des outils comme WordPress, me permettant ainsi de conjuguer design graphique et création web.<br><br></p>
+                    <p class="drop-reveal">Juste en dessous, vous pourrez découvrir deux des sites que j'ai réalisés.</p>
+                    <div class="sites-links drop-reveal">
+                        <a href="https://cac-tennis.fr" target="_blank" class="site-link drop-reveal" data-img="assets/image/CAC-Tennis.png"><span>CAC Tennis</span><i class='bx bx-right-arrow-alt'></i></a>
+                        <a href="https://boatelier.net" target="_blank" class="site-link drop-reveal" data-img="assets/image/BOA-logo-blanc-vertical_.svg"><span>Boatelier</span><i class='bx bx-right-arrow-alt'></i></a>
+                    </div>
+                    <div class="site-preview"></div>
+                </div>
+ 
+                <div class="expériences-timeline drop-reveal">
+                    <div class="timeline-track drop-reveal">
+                        <div class="timeline-line-fill"></div>
+                    </div>
+                    <div class="timeline-item slide-right">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-periode">2017 — 2019</span>
+                        <h3 class="timeline-nom">BTS CPI</h3>
+                        <p class="timeline-lieu">Lycée Louis Rascol — Albi</p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag"><i class='bx bx-shape-triangle'></i> Modélisation 3D</span>
+                            <span class="timeline-tag"><i class='bx bx-ruler'></i> Conception industrielle</span>
+                            <span class="timeline-tag"><i class='bx bx-cube'></i> SolidWorks</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item slide-right">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-periode">2019 — 2022</span>
+                        <h3 class="timeline-nom">Licence Design Graphique</h3>
+                        <p class="timeline-lieu">ISCID — Montauban</p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag"><i class='bx bxl-adobe'></i> Illustrator</span>
+                            <span class="timeline-tag"><i class='bx bxl-adobe'></i> Photoshop</span>
+                            <span class="timeline-tag"><i class='bx bxl-adobe'></i> InDesign</span>
+                            <span class="timeline-tag"><i class='bx bx-palette'></i> Identité visuelle</span>
+                            <span class="timeline-tag"><i class='bx bx-printer'></i> Print</span>
+                        </div>
+                    </div>
+                    <div class="timeline-item slide-right">
+                        <div class="timeline-dot"></div>
+                        <span class="timeline-periode">2023 — 2024</span>
+                        <h3 class="timeline-nom">Titre Pro UI Designer</h3>
+                        <p class="timeline-lieu">Formasup82 — Montauban</p>
+                        <div class="timeline-tags">
+                            <span class="timeline-tag"><i class='bx bxl-figma'></i> Figma</span>
+                            <span class="timeline-tag"><i class='bx bxl-wordpress'></i> WordPress</span>
+                            <span class="timeline-tag"><i class='bx bxl-html5'></i> HTML / CSS</span>
+                            <span class="timeline-tag"><i class='bx bxl-javascript'></i> JavaScript</span>
+                            <span class="timeline-tag"><i class='bx bx-mobile'></i> UX / UI</span>
+                        </div>
+                    </div>
+                </div>
+ 
+            </section>
+ 
+            <section class="services" id="services">
+                <h2 class="heading"><span class="highlight-reveal">/SERVICES</span></h2>
+                <div class="services-container">
+ 
+                    <div class="service-box slide-up">
+                        <div class="service-default">
+                            <i class="bx bxl-figma"></i>
+                            <h4>ui / ux</h4>
+                        </div>
+                        <div class="service-hover">
+                            <h4>ui / ux</h4>
+                            <p>L'UX concerne l'expérience globale de l'utilisateur : comment il ressent et interagit avec le produit. L'UI est la dimension visuelle : couleurs, typographie, boutons, animations.</p>
+                        </div>
+                    </div>
+ 
+                    <div class="service-box slide-up">
+                        <div class="service-default">
+                            <i class="bx bx-layer"></i>
+                            <h4>graphisme</h4>
+                        </div>
+                        <div class="service-hover">
+                            <h4>graphisme</h4>
+                            <p>Je transforme des idées en messages visuels percutants et personnalisés. Créativité artistique et compréhension des objectifs pour une image cohérente et professionnelle.</p>
+                        </div>
+                    </div>
+ 
+                    <div class="service-box slide-up">
+                        <div class="service-default">
+                            <i class="bx bx-code"></i>
+                            <h4>code</h4>
+                        </div>
+                        <div class="service-hover">
+                            <h4>code</h4>
+                            <p>WordPress, HTML, CSS et JavaScript pour personnaliser chaque détail. Cette double compétence me permet d'intervenir directement dans le code lorsque nécessaire.</p>
+                        </div>
+                    </div>
+ 
+                    <div class="service-box slide-up">
+                        <div class="service-default">
+                            <i class="bx bxl-wordpress"></i>
+                            <h4>wordpress</h4>
+                        </div>
+                        <div class="service-hover">
+                            <h4>wordpress</h4>
+                            <p>Sites modernes, performants et facilement administrables. Optimisation, sécurité et expérience utilisateur au cœur de chaque réalisation.</p>
+                        </div>
+                    </div>
+ 
+                </div>
+            </section>
+ 
+            <section class="projets" id="projets">
+                <h2 class="heading"><span class="highlight-reveal">/PROJETS</span></h2>
+                <p class="slide-left">Retrouvez ici une sélection de mes projets. Cette galerie évoluera au fil du temps avec mes prochaines créations.</p>
+                <div class="projets-list">
+                    <div class="projets-list__header slide-up"><span>Nom</span><span>Type</span><span>Date</span></div>
+                    <a href="./pages/projet1.html" class="projets-list__row slide-up"><span class="projets-list__name">Fournaise</span><span class="projets-list__type">Identité graphique</span><span class="projets-list__date">2023</span></a>
+                    <a href="./pages/projet2.html" class="projets-list__row slide-up"><span class="projets-list__name">B12</span><span class="projets-list__type">Affiche / Print</span><span class="projets-list__date">2024</span></a>
+                    <a href="./pages/projet3.html" class="projets-list__row slide-up"><span class="projets-list__name">Merch</span><span class="projets-list__type">Textile / Graphisme</span><span class="projets-list__date">2025</span></a>
+                </div>
+            </section>
+ 
+            <section class="contact" id="contact">
+                <h2 class="heading"><span class="highlight-reveal">/CONTACT</span></h2>
+                <p class="slide-left">Vous souhaitez collaborer ou en savoir plus sur mes services ? Remplissez le formulaire ci-dessous pour me contacter directement, je vous répondrai avec plaisir !</p>
+                <form action="https://formspree.io/f/xvzwbbla" method="POST">
+                    <div class="form-fields">
+                        <div class="form-field-link drop-reveal"><span class="form-field-label">Prénom</span><input type="text" id="firstname" name="firstname" placeholder="..."><i class='bx bx-right-arrow-alt'></i></div>
+                        <div class="form-field-link drop-reveal"><span class="form-field-label">Nom</span><input type="text" id="name" name="name" placeholder="..."><i class='bx bx-right-arrow-alt'></i></div>
+                        <div class="form-field-link drop-reveal"><span class="form-field-label">E-mail <span class="required">*</span></span><input type="email" id="email" name="email" placeholder="..." required><i class='bx bx-right-arrow-alt'></i></div>
+                        <div class="form-field-link drop-reveal"><span class="form-field-label">Téléphone</span><input type="tel" id="phone" name="phone" placeholder="..."><i class='bx bx-right-arrow-alt'></i></div>
+                        <div class="form-field-link drop-reveal"><span class="form-field-label">Sujet <span class="required">*</span></span><input type="text" id="subject" name="subject" placeholder="..." required><i class='bx bx-right-arrow-alt'></i></div>
+                        <div class="form-field-link form-field-textarea drop-reveal"><span class="form-field-label">Votre message <span class="required">*</span></span><textarea id="message" name="message" placeholder="..." required></textarea><i class='bx bx-right-arrow-alt'></i></div>
+                    </div>
+                    <div class="form-bottom">
+                        <div class="g-recaptcha drop-reveal" data-sitekey="6LcWowAsAAAAAEPsTAk4SqQz6U0yWhn9f_G878iq"></div>
+                        <input type="submit" value="envoyer" class="gradient-btn-contact drop-reveal">
+                    </div>
+                </form>
+            </section>
+ 
+            <footer class="footer">
+                <div class="footer__bg-logo" aria-hidden="true">
+                    <img src="./assets/image/logo2026ok.svg" alt="" class="footer__bg-logo-img" />
+                </div>
+                <div class="footer__content">
+                    <p class="copyright slide-up">© Ayllón Gwenaël | Tous droits réservés</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/gwenael-ayllon/" target="_blank" class="slide-up">
+                            <i class="bx bxl-linkedin-square"></i>
+                        </a>
+                    </div>
+                    <ul class="list slide-up">
+                        <li><a href="#expériences">Expériences</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projets">Projets</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </footer>
+ 
+            <!-- POPUP — thème du site -->
+            <div class="popup" id="popup">
+                <div class="popup-content">
+                    <button class="close-btn" aria-label="Fermer">
+                        <i class='bx bx-x'></i>
+                    </button>
+                    <div class="popup-icon">
+                        <i class='bx bx-check-circle'></i>
+                    </div>
+                    <h3 id="popup-title"></h3>
+                    <p id="popup-text"></p>
+                </div>
+            </div>
+ 
+        </div>
+    </div>
+ 
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+ 
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js",
+            "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"
+        }
+    }
+    </script>
+ 
+    <script src="./scripts/popup.js"></script>
+    <script src="./scripts/CursorEffect.js"></script>
+    <script src="./scripts/pixelated-wave-transition.js"></script>
+    <script src="./scripts/highlight-reveal.js"></script>
+    <script src="./scripts/site-preview.js"></script>
+    <script src="./scripts/drag-slider.js"></script>
+    <script src="./scripts/footer.js"></script>
+    <script src="./scripts/timeline.js"></script>
+    <script type="module" src="./scripts/viewer3d.js"></script>
+ 
+    <script>
+        /* ── Header scroll — identique à l'original ── */
+        window.addEventListener('scroll', () => {
+            document.querySelector('.header').classList.toggle('scrolled', window.scrollY > 80);
+        });
+    </script>
+ 
+    <script>
+        /* ── Menu mobile ── */
+        const menuIcon = document.getElementById('menu-icon');
+        const navbar   = document.querySelector('.navbar');
+        const overlay  = document.querySelector('.navbar-overlay');
+ 
+        function openMenu() {
+            navbar.classList.add('active');
+            overlay.classList.add('active');
+            document.body.classList.add('no-scroll');
+            menuIcon.classList.remove('bx-menu');
+            menuIcon.classList.add('bx-x');
+        }
+ 
+        function closeMenu() {
+            navbar.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.classList.remove('no-scroll');
+            menuIcon.classList.remove('bx-x');
+            menuIcon.classList.add('bx-menu');
+        }
+ 
+        menuIcon.addEventListener('click', () => {
+            navbar.classList.contains('active') ? closeMenu() : openMenu();
+        });
+ 
+        overlay.addEventListener('click', closeMenu);
+ 
+        navbar.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', closeMenu);
+        });
+    </script>
+ 
+</body>
+</html>

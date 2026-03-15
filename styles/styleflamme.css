@@ -1,0 +1,40 @@
+* { cursor: none; box-sizing: border-box; margin: 0; padding: 0; }
+
+@media (max-width: 768px) {
+    * { cursor: auto; }
+    .cursor, .cursor-circle { display: none; }
+}
+
+.cursor {
+    position: fixed;
+    width: 6px;
+    height: 6px;
+    background: white;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 10000;
+    transform: translate(-50%, -50%);
+}
+
+.cursor-circle {
+    position: fixed;
+    width: 36px;
+    height: 36px;
+    border: 1.5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease, height 0.3s ease, border-color 0.3s ease, background 0.3s ease;
+}
+
+.cursor-circle--hover {
+    width: 52px;
+    height: 52px;
+    border-color: var(--color-accent);
+    background: rgba(181, 255, 0, 0.06);
+}
+
+.cursor--hover {
+    background: var(--color-accent);
+}

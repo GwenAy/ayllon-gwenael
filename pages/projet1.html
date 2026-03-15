@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Fournaise - Portfolio</title>
+    <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"}}</script>
+</head>
+<body>
+    <section class="projet-hero">
+        <canvas id="threejs-canvas"></canvas>
+        <a href="../index.html#home" class="projet-logo"><img src="../assets/image/logo2026ok.svg" alt="Logo"></a>
+        <div class="projet-overlay">
+            <div class="projet-overlay-inner">
+                <span class="projet-tag">Identité graphique — 2024</span>
+                <h1>Fournaise</h1>
+                <div class="projet-divider"></div>
+                <p>Il s'agit d'une bière épicée, ce qui a guidé l'ambiance visuelle vers quelque chose de chaleureux et expressif, avec un nom évoquant directement la chaleur et l'intensité.<br><br>L'identité comprend un logo, une palette graphique et des éléments visuels conçus pour refléter ce caractère.<br><br>Le travail a été réalisé principalement sur Illustrator pour la conception du logo et des déclinaisons graphiques, avec un passage par Photoshop pour certains rendus visuels et mises en situation.</p>
+            </div>
+            <div class="projet-overlay-footer">
+                <span class="projet-drag-hint"><i class='bx bx-move'></i> Glisser pour orbiter</span>
+                <a href="../index.html#projets" class="btn">← retour</a>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="../scripts/loader1.js"></script>
+    <section class="projet-gallery">
+        <div class="gallery-container">
+            <img src="../assets/image/carte-de-visite-Fournaise.webp" alt="Projet 1">
+            <img src="../assets/image/Fournaise.webp" alt="Projet 2">
+            <img src="../assets/image/Fournaise-blanc.webp" alt="Projet 3">
+        </div>
+    </section>
+    <a href="#" id="back-to-top" title="Retour en haut">↑</a>
+    <script>
+        const backToTop = document.getElementById("back-to-top");
+        window.addEventListener("scroll", () => { backToTop.style.display = window.scrollY > 300 ? "block" : "none"; });
+        backToTop.addEventListener("click", (e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); });
+    </script>
+</body>
+</html>

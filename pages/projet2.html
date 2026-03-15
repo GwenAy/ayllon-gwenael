@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Festival B12 - Portfolio</title>
+    <script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.165.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.165.0/examples/jsm/"}}</script>
+</head>
+<body>
+    <section class="projet-hero">
+        <canvas id="threejs-canvas"></canvas>
+        <a href="../index.html#home" class="projet-logo"><img src="../assets/image/logo2026ok.svg" alt="Logo"></a>
+        <div class="projet-overlay">
+            <div class="projet-overlay-inner">
+                <span class="projet-tag">Affiche / Print — 2024</span>
+                <h1>Festival B12</h1>
+                <div class="projet-divider"></div>
+                <p>B12 est un projet de déclinaison d'affiches pour un festival basé sur la thématique du nœud, explorant les notions de lien, de connexion et d'entrelacement.<br><br>Cette approche conceptuelle m'a conduit à créer une identité visuelle épurée et graphique, jouant uniquement sur le contraste du noir et du blanc pour renforcer l'impact visuel.<br><br>Le travail a été réalisé sur Illustrator pour la création des formes et des compositions graphiques, puis sur InDesign pour la mise en page finale des affiches.</p>
+            </div>
+            <div class="projet-overlay-footer">
+                <span class="projet-drag-hint"><i class='bx bx-move'></i> Glisser pour orbiter</span>
+                <a href="../index.html#projets" class="btn">← retour</a>
+            </div>
+        </div>
+    </section>
+    <script type="module" src="../scripts/loader2.js"></script>
+    <section class="projet-gallery">
+        <div class="gallery-container">
+            <img src="../assets/image/Celui-qui-tombe2.webp" alt="Projet 1">
+            <img src="../assets/image/Moeder2.webp" alt="Projet 2">
+            <img src="../assets/image/Room-with-a-view2.webp" alt="Projet 3">
+        </div>
+    </section>
+    <a href="#" id="back-to-top" title="Retour en haut">↑</a>
+    <script>
+        const backToTop = document.getElementById("back-to-top");
+        window.addEventListener("scroll", () => { backToTop.style.display = window.scrollY > 300 ? "block" : "none"; });
+        backToTop.addEventListener("click", (e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: "smooth" }); });
+    </script>
+</body>
+</html>

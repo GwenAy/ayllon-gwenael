@@ -1562,6 +1562,11 @@ section + section {
     .expériences {
         gap: 3rem !important;
         padding: 5rem 5% !important;
+        overflow: hidden !important;
+    }
+
+    .expériences-content h2 {
+        font-size: 5rem !important;
     }
  
     .expériences-timeline {

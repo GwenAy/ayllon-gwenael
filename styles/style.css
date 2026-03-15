@@ -1560,7 +1560,7 @@ section + section {
         gap: 3rem !important;
     }
  
-    .expériences {
+    section.expériences {
         gap: 3rem !important;
         padding: 5rem 5% !important;
         overflow: hidden !important;

@@ -75,27 +75,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
         /* — SLIDE FROM LEFT — */
         .slide-left {
-        opacity: 0;
-        transform: translateX(-150px);
-        transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-        transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0;
+            transform: translateX(-150px);
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                        transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .slide-left.revealed {
-        opacity: 1;
-        transform: translateX(0);
+            opacity: 1;
+            transform: translateX(0);
         }
 
+        /* — SLIDE UP — */
         .slide-up {
-        opacity: 0;
-        transform: translateY(80px);
-        transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
-        transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+            opacity: 0;
+            transform: translateY(80px);
+            transition: opacity 0.8s cubic-bezier(0.4, 0, 0.2, 1),
+                        transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .slide-up.revealed {
-        opacity: 1;
-        transform: translateY(0);
+            opacity: 1;
+            transform: translateY(0);
         }
 
     `;
@@ -111,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     setTimeout(() => el.classList.add('revealed'), 2000 + i * 200);
                 });
                 entry.target.querySelectorAll('.slide-right:not(.revealed)').forEach((el, i) => {
-                    setTimeout(() => el.classList.add('revealed'), 600 + i * 200);;
+                    setTimeout(() => el.classList.add('revealed'), 600 + i * 200);
                 });
                 entry.target.querySelectorAll('.slide-left:not(.revealed)').forEach((el, i) => {
                     setTimeout(() => el.classList.add('revealed'), 600 + i * 200);
@@ -119,22 +120,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 entry.target.querySelectorAll('.slide-up:not(.revealed)').forEach((el, i) => {
                     setTimeout(() => el.classList.add('revealed'), 400 + i * 150);
                 });
-            } else {
-                entry.target.querySelectorAll('span.highlight-reveal').forEach(el => {
-                    el.classList.remove('revealed');
-                });
-                entry.target.querySelectorAll('.drop-reveal').forEach(el => {
-                    el.classList.remove('revealed');
-                });
-                entry.target.querySelectorAll('.slide-right').forEach(el => {
-                    el.classList.remove('revealed');
-                });
-                entry.target.querySelectorAll('.slide-left').forEach(el => {
-                    el.classList.remove('revealed');
-                });
-                entry.target.querySelectorAll('.slide-up').forEach(el => {
-                    el.classList.remove('revealed');
-                });
+
+                sectionObserver.unobserve(entry.target);
             }
         });
     }, { threshold: 0.2 });
@@ -143,29 +130,22 @@ document.addEventListener('DOMContentLoaded', () => {
         sectionObserver.observe(section);
     });
 
-    // Slide-up logo footer sur mobile uniquement
-        if (window.innerWidth <= 768) {
-            const footerLogo = document.querySelector('.footer__bg-logo');
-            if (footerLogo) footerLogo.classList.add('slide-up');
-        }
-
-        if (window.innerWidth <= 768) {
+    if (window.innerWidth <= 768) {
         const footerLogo = document.querySelector('.footer__bg-logo');
         if (footerLogo) {
             footerLogo.classList.add('slide-up');
-            
+
             const logoObserver = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
                     if (entry.isIntersecting) {
                         setTimeout(() => footerLogo.classList.add('revealed'), 400);
-                    } else {
-                        footerLogo.classList.remove('revealed');
+                        logoObserver.unobserve(footerLogo);
                     }
                 });
             }, { threshold: 0.5 });
 
             logoObserver.observe(footerLogo);
         }
-    }    
+    }
 
 });

@@ -1070,7 +1070,7 @@ section + section {
     background: transparent;
     color: var(--color-text);
     font-weight: 900;
-    min-height: 80vh;
+    min-height: 100vh;
 }
  
 .contact h2 {

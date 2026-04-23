@@ -224,6 +224,12 @@
                         <div class="service-hover">
                             <h4>ui / ux</h4>
                             <p>L'UX concerne l'expérience globale de l'utilisateur : comment il ressent et interagit avec le produit. L'UI est la dimension visuelle : couleurs, typographie, boutons, animations.</p>
+                            <ul class="service-points">
+                                <li>Maquette & wireframe</li>
+                                <li>Prototype</li>
+                                <li>Livrable 2-4 semaines</li>
+                            </ul>
+                            <a href="#contact" class="btn service-btn">commencer</a>
                         </div>
                     </div>
  
@@ -235,6 +241,12 @@
                         <div class="service-hover">
                             <h4>graphisme</h4>
                             <p>Je transforme des idées en messages visuels percutants et personnalisés. Créativité artistique et compréhension des objectifs pour une image cohérente et professionnelle.</p>
+                            <ul class="service-points">
+                                <li>Logotype</li>
+                                <li>Charte graphique / identité visuelle</li>
+                                <li>Livrable 2-4 semaines</li>
+                            </ul>
+                            <a href="#contact" class="btn service-btn">commencer</a>
                         </div>
                     </div>
  
@@ -245,7 +257,13 @@
                         </div>
                         <div class="service-hover">
                             <h4>code</h4>
-                            <p>WordPress, HTML, CSS et JavaScript pour personnaliser chaque détail. Cette double compétence me permet d'intervenir directement dans le code lorsque nécessaire.</p>
+                            <p>HTML, CSS et JavaScript pour personnaliser chaque détail. Cette double compétence me permet d'intervenir directement dans le code lorsque nécessaire.</p>
+                            <ul class="service-points">
+                                <li>Site vitrine</li>
+                                <li>Landing page</li>
+                                <li>Livrable 2-4 semaines</li>
+                            </ul>
+                            <a href="#contact" class="btn service-btn">commencer</a>
                         </div>
                     </div>
  
@@ -257,6 +275,12 @@
                         <div class="service-hover">
                             <h4>wordpress</h4>
                             <p>Sites modernes, performants et facilement administrables. Optimisation, sécurité et expérience utilisateur au cœur de chaque réalisation.</p>
+                            <ul class="service-points">
+                                <li>Design moderne & responsive</li>
+                                <li>Référencement SEO</li>
+                                <li>Livrable 2-4 semaines</li>
+                            </ul>
+                            <a href="#contact" class="btn service-btn">commencer</a>
                         </div>
                     </div>
  
@@ -293,7 +317,25 @@
                 </form>
             </section>
  
-            <footer class="footer">
+            
+ 
+            <!-- POPUP — thème du site -->
+            <div class="popup" id="popup">
+                <div class="popup-content">
+                    <button class="close-btn" aria-label="Fermer">
+                        <i class='bx bx-x'></i>
+                    </button>
+                    <div class="popup-icon">
+                        <i class='bx bx-check-circle'></i>
+                    </div>
+                    <h3 id="popup-title"></h3>
+                    <p id="popup-text"></p>
+                </div>
+            </div>
+ 
+        </div>
+
+        <footer class="footer">
                 <div class="footer__bg-logo" aria-hidden="true">
                     <img src="./assets/image/logo2026ok.svg" alt="" class="footer__bg-logo-img" />
                 </div>
@@ -312,22 +354,6 @@
                     </ul>
                 </div>
             </footer>
- 
-            <!-- POPUP — thème du site -->
-            <div class="popup" id="popup">
-                <div class="popup-content">
-                    <button class="close-btn" aria-label="Fermer">
-                        <i class='bx bx-x'></i>
-                    </button>
-                    <div class="popup-icon">
-                        <i class='bx bx-check-circle'></i>
-                    </div>
-                    <h3 id="popup-title"></h3>
-                    <p id="popup-text"></p>
-                </div>
-            </div>
- 
-        </div>
     </div>
  
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -349,6 +375,7 @@
     <script src="./scripts/site-preview.js"></script>
     <script src="./scripts/drag-slider.js"></script>
     <script src="./scripts/footer.js"></script>
+    <script src="./scripts/footer-parallax.js"></script>
     <script src="./scripts/timeline.js"></script>
     <script type="module" src="./scripts/viewer3d.js"></script>
  

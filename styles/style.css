@@ -970,7 +970,41 @@ section + section {
     line-height: 1.65;
     color: rgba(255, 255, 255, 0.88);
 }
- 
+
+.service-points {
+    list-style: none;
+    margin-top: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.service-points li {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.75);
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.service-points li::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    box-shadow: 0 0 8px rgba(181, 255, 0, 0.4);
+    flex-shrink: 0;
+}
+
+.service-btn {
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    padding: 0.6rem 1.6rem;
+    align-self: flex-start;
+}
+
 /* ================================================
    SECTION — PROJETS (liste)
 ================================================ */
@@ -1652,3 +1686,33 @@ section + section {
     .popup-content h3 { font-size: 2.4rem; }
     .popup-content p  { font-size: 1.5rem; }
 }
+
+
+/* ================================================
+   FOOTER — PARALLAX REVEAL
+================================================ */
+
+#app {
+    display: block; /* au lieu de flex */
+    position: relative;
+}
+
+#bg-container {
+    z-index: -1 !important;
+}
+
+#content-container {
+    position: relative;
+    z-index: 2;
+    background: #2128bd;
+}
+
+.footer {
+    height: 70vh;
+    position: sticky !important;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0;
+    will-change: opacity;
+}
+

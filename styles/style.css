@@ -1631,6 +1631,9 @@ section + section {
  
     .footer {
         padding: 5rem 5%;
+        height: auto !important;  /* ← ajoute ça */
+        position: relative !important;  /* ← et ça */
+        opacity: 1 !important;  /* ← pour qu'il soit visible */
         min-height: unset;
         padding-bottom: 9rem;
     }

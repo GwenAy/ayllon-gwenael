@@ -1719,3 +1719,71 @@ section + section {
     will-change: opacity;
 }
 
+/* ================================================
+   SECTION — MODÈLES 3D (home)
+================================================ */
+
+.modeles3d {
+    background: transparent;
+    color: var(--color-text);
+}
+
+.modeles3d .heading {
+    color: var(--color-accent);
+}
+
+.modeles3d-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width: 1285px) {
+    .modeles3d-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.modele3d-item {
+    position: relative;
+    height: 40rem;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.modele3d-item canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.modele3d-item .drag-hint {
+    position: absolute;
+    bottom: 1.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.35);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    pointer-events: none;
+}
+
+.modele3d-item .modele3d-label {
+    position: absolute;
+    top: 1.2rem;
+    left: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}

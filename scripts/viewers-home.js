@@ -83,7 +83,8 @@ createViewer({
     canvasId: 'canvas-fournaise',
     modelPath: './assets/3D/bouteille-fournaise.glb',
     cameraPos: [0, 0, 30],
-    scale: 0.4
+    scale: 0.4,
+    offsetY: 30
 });
 
 // B12 — présentoir affiche
